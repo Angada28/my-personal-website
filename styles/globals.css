@@ -1,0 +1,10 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background: url('../public/current_background.jpeg') no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
