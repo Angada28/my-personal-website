@@ -8,7 +8,7 @@ const Card = ({ title, imgSrc, content, link }) => {
       <h3 className={styles.title}>{title}</h3>
       <Image src={imgSrc} alt="project image" width={400} height={200} />
       <p className={styles.content}>{content}</p>
-      <a className={styles.link} href={link}>View Repository</a>
+      <a className={styles.link} href={link} target="_blank">View Repository</a>
 
     </div>
   );
