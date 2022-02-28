@@ -18,10 +18,10 @@ const About = () => {
         But I enjoy making origami and computer science more specifically. 
         <br />
         <br />
-        This website is here to provide an overview of the things I have done. New projects will be added. Please have a look around and let me know if ther is anything I can improve on.
+        This website is here to provide an overview of the things I have done. New projects will be added. Please have a look around and let me know if there is anything I can improve on.
         <br />
         <br />
-        Hopefully you find my work.
+        Hopefully you find my work interesting.
       </p>
       <Button path="Projects">Projects</Button>
     </div>
