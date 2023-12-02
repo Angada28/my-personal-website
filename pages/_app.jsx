@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="app">
-      {typeof document !== 'undefined' && (
+     (
         <nav className="floating-navbar">
           <ul >
             <li><a href="#introduction">Introduction</a></li>
@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
             <li><a href="#concluding-remarks">Concluding Remarks</a></li>
           </ul>
         </nav>
-      )}
+      )
 
       <Home/>
     </div>
