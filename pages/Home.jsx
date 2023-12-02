@@ -1,4 +1,6 @@
 // src/pages/Home.jsx
+/* eslint-disable @next/next/no-img-element */
+
 import React from 'react';
 
 const Home = () => {
@@ -7,16 +9,19 @@ const Home = () => {
       <section id="introduction">
         <h1>The Unseen Consequences: How Technology Shapes Our Lives and Privacy</h1>
         <img src="/title_pic.jpg" alt="Introduction" />
-        <p>As technology continues to grow, it often helps us out in our day-to-day lives. From being able to connect with friends and family right away to swiftly accessing information, and now we are seeing big improvements with AI. While these are good changes to society they do have a cost and that is your privacy. The goal of this article is to help bring more attention to the issue of digital privacy. 
+        <p>
+          As technology continues to grow, it often helps us out in our day-to-day lives. From being able to connect with friends and family right away to swiftly accessing information, and now we are seeing big improvements with AI. While these are good changes to society they do have a cost and that is your privacy. The goal of this article is to help bring more attention to the issue of digital privacy. 
         </p>
       </section>
 
       <section id="duality-of-free-services">
         <h2>The Duality of Free Services</h2>
         <img src="/duality.jpg" alt="Duality of Free Services" />
-        <p>Many of us use free services such as Facebook and Google to help us connect with others or to help us get an answer to some questions. Several of these free services provide users with information about inclement weather updates, for example warning users of an ice storm or other natural disasters. They also are important in spreading information about missing people as well. Oftentimes we can get advice on how to improve different parts of our lives through these free services. 
+        <p>
+            Many of us use free services such as Facebook and Google to help us connect with others or to help us get an answer to some questions. Several of these free services provide users with information about inclement weather updates, for example warning users of an ice storm or other natural disasters. They also are important in spreading information about missing people as well. Oftentimes we can get advice on how to improve different parts of our lives through these free services. 
         </p>
-        <p>As many are taking mental health more seriously than before, technology can help make it more accessible to others. In a study done by researchers at the universities of Iowa and Wisconsin-Madison, they were able to find many benefits and a few downsides to incorporating technology in mental healthcare. The article opens up by talking about different mediums that mental healthcare providers use when communicating with their patients. Through digital communication, they can reach out to patients in different ways such as email, text messages, over the phone, and through some apps. They also noted that the providers can work more efficiently through digital notes, this makes their notes more accessible and makes it easier to share with others if needed. However, with these benefits, many risks need to be considered when it comes to the privacy of their clients. There could be an unintentional leak of a patient's information which could breach or if a hacker were to attack the provider. It is important to consider privacy when dealing with technology to make things safer for the user.
+        <p>
+          As many are taking mental health more seriously than before, technology can help make it more accessible to others. In a study done by researchers at the universities of Iowa and Wisconsin-Madison, they were able to find many benefits and a few downsides to incorporating technology in mental healthcare. The article opens up by talking about different mediums that mental healthcare providers use when communicating with their patients. Through digital communication, they can reach out to patients in different ways such as email, text messages, over the phone, and through some apps. They also noted that the providers can work more efficiently through digital notes, this makes their notes more accessible and makes it easier to share with others if needed. However, with these benefits, many risks need to be considered when it comes to the privacy of their clients. There could be an unintentional leak of a patient's information which could breach or if a hacker were to attack the provider. It is important to consider privacy when dealing with technology to make things safer for the user.
         </p>
         <p>
         Sometimes technology can be used for nefarious acts. This can be seen with the Cambridge Analytica scandal which came to light back in 2018. The political consulting form was found to be misusing Facebook user data. The firm harvested personal information from millions of Facebook profiles without proper consent. This data was then used to create targeted political ads. These ads were used to influence many political events around the world with one of the most known ones being the 2016 US presidential election.
