@@ -77,7 +77,7 @@ One way it can help is through data protection laws. Through such laws, it would
         Another way legislation would help is by creating laws for user rights. This legislation would grant individuals the right to access the information companies have on their data. Should the user choose they could correct any incorrect data or they could choose to have their data removed from the company. 
         </p>
         <p>
-        inally implementing laws that support transparency and accountability would go a long way in protecting our privacy online. By implementing such laws companies would have to explicitly tell users what they are collecting and how it will be used. That way users will be able to make a more informed decision on whether to give consent to such companies. Through such laws, companies would have to immediately notify users of any type of data leak so users can take appropriate action as early as possible instead of waiting months to even years for the company to notify them of such an event.
+        Finally implementing laws that support transparency and accountability would go a long way in protecting our privacy online. By implementing such laws companies would have to explicitly tell users what they are collecting and how it will be used. That way users will be able to make a more informed decision on whether to give consent to such companies. Through such laws, companies would have to immediately notify users of any type of data leak so users can take appropriate action as early as possible instead of waiting months to even years for the company to notify them of such an event.
 
         </p>
         <p>
