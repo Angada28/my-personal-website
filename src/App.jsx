@@ -1,10 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [theme, setTheme] = useState('dark')
+
+  useEffect(() => {
+    document.documentElement.className = theme
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((theme) => (theme === 'dark' ? 'light' : 'dark'))
+  }
 
   return (
     <>
@@ -21,6 +30,7 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <button onClick={toggleTheme}>Toggle to {theme === 'dark' ? 'light' : 'dark'} mode</button>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
