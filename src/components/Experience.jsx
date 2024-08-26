@@ -1,11 +1,9 @@
-import React from "react";
-
 const Experience = () => {
   return (
     <>
       <div>
         <h1>Experience</h1>
-        <p>I've worked at these places</p>
+        <p>I&apos;ve worked at these places</p>
       </div>
     </>
   );
