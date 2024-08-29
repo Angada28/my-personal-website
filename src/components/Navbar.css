@@ -1,0 +1,125 @@
+/* default styling */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+/* navbar */
+.navbar {
+  background-color: aliceblue;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  min-height: 70px;
+  position: fixed; /* Fix the navbar at the top */
+  top: 0; /* Align it to the top */
+  width: 100%; /* Make it span the full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* logo  */
+.logo {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ul  */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 780px) {
+  /* hamburger */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .bar {
+    background-color: #120f0b;
+    width: 20px;
+    height: 3px;
+    display: block;
+    margin: 5px;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+  }
+
+  /* adding active class to the bars  */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  /* navMenu */
+
+  .navMenu {
+    position: fixed;
+    flex-direction: column;
+    gap: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: aliceblue;
+    padding: 20px 0; /* Adjust padding to center items vertically */
+    transform: translateX(-100%);
+    transition: transform 0.7s ease-in-out;
+    z-index: 999; /* Ensure it stays above other content */
+    justify-content: center;
+  }
+
+  .navMenu.active {
+    transform: translateX(0);
+  }
+
+  .navMenu li {
+    margin: 16px 0;
+  }
+
+  .navMenu a {
+    padding: 10px 0; /* Add padding to center items vertically */
+  }
+
+  .navbar.active {
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.8
+    ); /* Darken the background when active */
+  }
+}

@@ -37,6 +37,7 @@ body {
   min-height: 100vh;
   align-items: center;
   justify-content: center;
+  padding-top: 75px;
 }
 
 h1 {
@@ -59,10 +60,10 @@ button {
 button:hover {
   border-color: #646cff;
 }
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  }
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
 
 .light button {
   background-color: #f9f9f9;
