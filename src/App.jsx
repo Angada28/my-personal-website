@@ -21,17 +21,19 @@ function App() {
           Toggle to {theme === "dark" ? "light" : "dark"} mode
         </button>
       </div>
-      <div id="hero" className="section">
-        <Hero />
-      </div>
-      <div id="experience" className="section">
-        <Experience />
-      </div>
-      <div id="projects" className="section">
-        <Projects />
-      </div>
-      <div id="contact" className="section">
-        <Contact />
+      <div className="main-content">
+        <div id="hero" className="section">
+          <Hero />
+        </div>
+        <div id="experience" className="section">
+          <Experience />
+        </div>
+        <div id="projects" className="section">
+          <Projects />
+        </div>
+        <div id="contact" className="section">
+          <Contact />
+        </div>
       </div>
     </>
   );
