@@ -24,7 +24,6 @@ a {
 
 /* navbar */
 .navbar {
-  background-color: aliceblue;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -36,6 +35,14 @@ a {
   width: 100%; /* Make it span the full width */
   z-index: 1000; /* Ensure it stays above other content */
   transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.light {
+  background-color: aliceblue;
+}
+
+.navbar.dark {
+  background-color: #333;
 }
 
 /* logo  */
@@ -50,6 +57,14 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+}
+
+.navMenu.light {
+  background-color: aliceblue;
+}
+
+.navMenu.dark {
+  background-color: #333;
 }
 
 /* media queries */
@@ -94,7 +109,6 @@ a {
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: aliceblue;
     padding: 20px 0; /* Adjust padding to center items vertically */
     transform: translateX(100%);
     transition: transform 0.7s ease-in-out;
@@ -115,11 +129,13 @@ a {
   }
 
   .navbar.active {
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.8
-    ); /* Darken the background when active */
+    background-color: rgba(0, 0, 0, 0.8); /* Darken the background when active */
+  }
+
+  .theme-toggle {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
   }
 }

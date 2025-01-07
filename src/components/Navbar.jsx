@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, animateScroll } from "react-scroll";
 import "./Navbar.css";
 
-function Navbar() {
+function Navbar({ toggleTheme, theme }) {
   const [isActive, setIsActive] = useState(false);
 
   const toggleActiveClass = () => {
@@ -17,13 +17,26 @@ function Navbar() {
     animateScroll.scrollToTop();
   };
 
+  const handleToggleTheme = () => {
+    toggleTheme();
+    removeActive();
+  };
+
   return (
     <>
-      <nav className={`navbar ${isActive ? "active" : ""}`}>
-        <button onClick={scrollToTop}>Angad Harish</button>
-        <div className={`navMenu ${isActive ? "active" : ""}`}>
+      <nav className={`navbar ${isActive ? "active" : ""} ${theme}`}>
+        <a
+          className="navLink"
+          onClick={() => {
+            removeActive();
+            scrollToTop();
+          }}
+        >
+          Angad Harish
+        </a>
+        <div className={`navMenu ${isActive ? "active" : ""} ${theme}`}>
           <Link
-            to={"hero"}
+            to={"about"}
             smooth={true}
             duration={1000}
             offset={-50}
@@ -62,6 +75,9 @@ function Navbar() {
           >
             Contact
           </Link>
+          <button className="theme-toggle" onClick={handleToggleTheme}>
+            Toggle to {theme === "dark" ? "light" : "dark"} mode
+          </button>
         </div>
 
         <div
