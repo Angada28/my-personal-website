@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { Contact, Projects, Experience, Hero, Navbar } from "./components";
+import { Contact, Projects, Experience, Hero, Navbar, About } from "./components";
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -15,15 +15,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <div className="card">
-        <button onClick={toggleTheme}>
-          Toggle to {theme === "dark" ? "light" : "dark"} mode
-        </button>
-      </div>
+      <Navbar toggleTheme={toggleTheme} theme={theme} />
       <div className="main-content">
         <div id="hero" className="section">
           <Hero />
+        </div>
+        <div id="about" className="section">
+          <About />
         </div>
         <div id="experience" className="section">
           <Experience />
