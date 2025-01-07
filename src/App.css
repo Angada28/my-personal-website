@@ -19,3 +19,21 @@ ul {
 .main-content {
   padding: 0 5rem 5rem 5rem;
 }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hero-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.hero-text {
+  text-align: left;
+}
