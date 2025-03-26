@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import ThemeToggle from './ThemeToggle';
+import { ThemeContext } from '../context/ThemeContext';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { isDarkMode } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +38,11 @@ const Navbar = () => {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <Link to="home" className="navbar-logo" smooth={true} duration={500} onClick={closeMenu}>
+          <img
+            src={isDarkMode ? "/favicon-dark.ico" : "/favicon.ico"}
+            alt="Logo"
+            className="navbar-logo-icon"
+          />
           <span>AH</span>
         </Link>
 

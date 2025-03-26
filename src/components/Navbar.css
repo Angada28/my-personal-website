@@ -26,6 +26,11 @@
   padding: 0 var(--space-lg);
 }
 
+.navbar-logo-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .navbar-logo {
   color: var(--primary);
   font-size: 1.8rem;
@@ -33,6 +38,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  gap: 8px;
 }
 
 .navbar-logo span {
@@ -55,6 +61,12 @@
 .navbar-logo:hover span::after {
   transform: scaleX(1);
   transform-origin: left;
+}
+
+.navbar-logo-icon {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s ease;
 }
 
 .nav-menu {
