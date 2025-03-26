@@ -1,95 +1,73 @@
-import { useState } from "react";
-import { Link, animateScroll } from "react-scroll";
-import "./Navbar.css";
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import ThemeToggle from './ThemeToggle';
+import './Navbar.css';
 
-function Navbar({ toggleTheme, theme }) {
-  const [isActive, setIsActive] = useState(false);
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-  const toggleActiveClass = () => {
-    setIsActive(!isActive);
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
 
-  const removeActive = () => {
-    setIsActive(false);
-  };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
-  const scrollToTop = () => {
-    animateScroll.scrollToTop();
-  };
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
-  const handleToggleTheme = () => {
-    toggleTheme();
-    removeActive();
-  };
+  const navLinks = [
+    { to: 'home', label: 'Home' },
+    { to: 'about', label: 'About' },
+    { to: 'experience', label: 'Experience' },
+    { to: 'projects', label: 'Projects' },
+    { to: 'contact', label: 'Contact' }
+  ];
 
   return (
-    <>
-      <nav className={`navbar ${isActive ? "active" : ""} ${theme}`}>
-        <a
-          className="navLink"
-          onClick={() => {
-            removeActive();
-            scrollToTop();
-          }}
-        >
-          Angad Harish
-        </a>
-        <div className={`navMenu ${isActive ? "active" : ""} ${theme}`}>
-          <Link
-            to={"about"}
-            smooth={true}
-            duration={1000}
-            offset={-50}
-            className="navLink"
-            onClick={removeActive}
-          >
-            About
-          </Link>
-          <Link
-            to={"experience"}
-            smooth={true}
-            duration={1000}
-            offset={-50}
-            className="navLink"
-            onClick={removeActive}
-          >
-            Experience
-          </Link>
-          <Link
-            to={"projects"}
-            smooth={true}
-            duration={1000}
-            offset={-50}
-            className="navLink"
-            onClick={removeActive}
-          >
-            Projects
-          </Link>
-          <Link
-            to={"contact"}
-            smooth={true}
-            duration={1000}
-            offset={-50}
-            className="navLink"
-            onClick={removeActive}
-          >
-            Contact
-          </Link>
-          <button className="theme-toggle" onClick={handleToggleTheme}>
-            Toggle to {theme === "dark" ? "light" : "dark"} mode
-          </button>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <div className="navbar-container">
+        <Link to="home" className="navbar-logo" smooth={true} duration={500} onClick={closeMenu}>
+          <span>AH</span>
+        </Link>
+
+        <div className="nav-actions">
+          <ThemeToggle />
+
+          <div className="menu-icon" onClick={toggleMenu}>
+            {isOpen ? <FaTimes /> : <FaBars />}
+          </div>
         </div>
 
-        <div
-          className={`hamburger ${isActive ? "active" : ""}`}
-          onClick={toggleActiveClass}
-        >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </div>
-      </nav>
-    </>
+        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
+          {navLinks.map((link) => (
+            <li key={link.to} className="nav-item">
+              <Link
+                to={link.to}
+                className="nav-link"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={closeMenu}
+              >
+                {link.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
   );
-}
+};
+
 export default Navbar;

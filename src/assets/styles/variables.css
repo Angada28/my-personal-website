@@ -1,0 +1,115 @@
+:root {
+    /* Light theme (default) */
+    --primary: #3a86ff;
+    --primary-dark: #0051cc;
+    --secondary: #6c63ff;
+    --accent: #ff9f1c;
+
+    /* Colors */
+    --bg-primary: #f8f9fa;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #e9ecef;
+    --text-color: #212529;
+    --text-color-secondary: #495057;
+    --text-color-muted: #6c757d;
+    --border-color: #dee2e6;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+
+    /* Theme toggle specific */
+    --theme-toggle-bg: #e9ecef;
+    --theme-toggle-hover: #dee2e6;
+
+    /* Card and component backgrounds */
+    --card-bg: #ffffff;
+    --navbar-bg: rgba(255, 255, 255, 0.95);
+    --navbar-scrolled-shadow: rgba(0, 0, 0, 0.1);
+    --footer-bg: #f8f9fa;
+
+    /* Skills section */
+    --skill-item-bg: #ffffff;
+    --skill-item-hover-color: #ffffff;
+
+    /* The rest of your variables... */
+    --grey-100: #f8f9fa;
+    --grey-200: #e9ecef;
+    --grey-300: #dee2e6;
+    --grey-400: #ced4da;
+    --grey-500: #adb5bd;
+    --grey-600: #6c757d;
+    --grey-700: #495057;
+    --grey-800: #343a40;
+    --grey-900: #212529;
+
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-secondary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-mono: 'Fira Code', 'Consolas', monospace;
+
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-xxl: 3rem;
+
+    /* Container max-widths */
+    --container-sm: 540px;
+    --container-md: 720px;
+    --container-lg: 960px;
+    --container-xl: 1140px;
+
+    /* Border radius */
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-full: 9999px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+    --transition-slow: 500ms ease;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+    --primary: #4d8eff;
+    --primary-dark: #3a86ff;
+    --secondary: #8b85ff;
+    --accent: #ffb545;
+
+    /* Colors */
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --text-color: #e9ecef;
+    --text-color-secondary: #adb5bd;
+    --text-color-muted: #868e96;
+    --border-color: #444444;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+
+    /* Theme toggle specific */
+    --theme-toggle-bg: #2d2d2d;
+    --theme-toggle-hover: #444444;
+
+    /* Card and component backgrounds */
+    --card-bg: #1e1e1e;
+    --navbar-bg: rgba(30, 30, 30, 0.95);
+    --navbar-scrolled-shadow: rgba(0, 0, 0, 0.3);
+    --footer-bg: #121212;
+
+    /* Skills section */
+    --skill-item-bg: #2d2d2d;
+    --skill-item-hover-color: #e9ecef;
+
+    /* Update grey scale for dark mode */
+    --grey-100: #2d2d2d;
+    --grey-200: #444444;
+    --grey-300: #666666;
+    --grey-400: #888888;
+    --grey-500: #aaaaaa;
+    --grey-600: #cccccc;
+    --grey-700: #dddddd;
+    --grey-800: #eeeeee;
+    --grey-900: #f8f9fa;
+}

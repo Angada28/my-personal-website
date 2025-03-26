@@ -1,39 +1,41 @@
-import { useState, useEffect } from "react";
-import "./App.css";
-import { Contact, Projects, Experience, Hero, Navbar, About } from "./components";
+import React from 'react';
+import { Navbar, Hero, About, Experience, Projects, Contact, Footer } from './components';
+import { ThemeProvider } from './context/ThemeContext';
+import './App.css';
 
 function App() {
-  const [theme, setTheme] = useState("dark");
-
-  useEffect(() => {
-    document.documentElement.className = theme;
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((theme) => (theme === "dark" ? "light" : "dark"));
-  };
-
   return (
-    <>
-      <Navbar toggleTheme={toggleTheme} theme={theme} />
-      <div className="main-content">
-        <div id="hero" className="section">
-          <Hero />
-        </div>
-        <div id="about" className="section">
-          <About />
-        </div>
-        <div id="experience" className="section">
-          <Experience />
-        </div>
-        <div id="projects" className="section">
-          <Projects />
-        </div>
-        <div id="contact" className="section">
-          <Contact />
-        </div>
+    <ThemeProvider>
+      <div className="app">
+        <Navbar />
+        <main>
+          <section id="home">
+            <Hero />
+          </section>
+          <section id="about" className="section">
+            <div className="container">
+              <About />
+            </div>
+          </section>
+          <section id="experience" className="section">
+            <div className="container">
+              <Experience />
+            </div>
+          </section>
+          <section id="projects" className="section">
+            <div className="container">
+              <Projects />
+            </div>
+          </section>
+          <section id="contact" className="section">
+            <div className="container">
+              <Contact />
+            </div>
+          </section>
+        </main>
+        <Footer />
       </div>
-    </>
+    </ThemeProvider>
   );
 }
 
