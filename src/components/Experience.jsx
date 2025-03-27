@@ -9,7 +9,7 @@ const Experience = () => {
       company: "University of Toronto",
       period: "Jan 2025 - Present",
       description:
-        "Teaching assistant for CSC148: Introduction to Computer Science. Responsible for conducting tutorials, grading assignments, and providing support to students.",
+        "Teaching assistant for CSC148: Introduction to Computer Science. Responsible for conducting tutorials, grading assignments, marking exams, and providing support to students.",
       type: "work",
       image: "uoftlogo.png",
     },
