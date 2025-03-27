@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Hero, About, Experience, Projects, Contact, Footer } from './components';
+import { Navbar, Hero, About, Experience, RandomFacts, Projects, Contact, Footer } from './components';
 import { ThemeProvider } from './context/ThemeContext';
 import './App.css';
 
@@ -20,6 +20,11 @@ function App() {
           <section id="experience" className="section">
             <div className="container">
               <Experience />
+            </div>
+          </section>
+          <section className="section">
+            <div className="container">
+              <RandomFacts />
             </div>
           </section>
           <section id="projects" className="section">
