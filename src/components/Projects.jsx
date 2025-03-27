@@ -20,7 +20,7 @@ const Projects = () => {
     {
       title: "UTAP",
       description:
-        "UTAP is a teaching assistant application system designed to make applying and hiring easier for both applicants and faculty. I made several workflow improvements, updated the ui/ux for instructors and made security improvements.",
+        "UTAP is a teaching assistant application system designed to make applying and hiring easier for both applicants and faculty. This project was done under Professor Bogdan Simion at UTM. I made several workflow improvements, updated the ui/ux for instructors and made security improvements.",
       technologies: [
         "React",
         "Node.js",
