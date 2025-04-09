@@ -7,3 +7,4 @@ export { default as Contact } from './Contact';
 export { default as Footer } from './Footer';
 export { default as ThemeToggle } from './ThemeToggle';
 export { default as RandomFacts } from './RandomFacts';
+export { default as NotFound } from './NotFound';
