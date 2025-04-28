@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-scroll';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-import './Hero.css';
+import React from "react";
+import { Link } from "react-scroll";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -40,10 +40,20 @@ const Hero = () => {
             </Link>
           </div>
           <div className="social-links fade-in">
-            <a href="https://github.com/Angada28" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <a
+              href="https://github.com/Angada28"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub"
+            >
               <FaGithub />
             </a>
-            <a href="https://www.linkedin.com/in/angad-harish-0405b8229" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/angad-harish-0405b8229"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="LinkedIn"
+            >
               <FaLinkedin />
             </a>
             <a href="mailto:angad.harish@utoronto.ca" aria-label="Email">
@@ -53,11 +63,7 @@ const Hero = () => {
         </div>
         <div className="hero-image fade-in">
           <div className="image-wrapper">
-            <img
-              src="hero.jpg"
-              alt="Angad Harish"
-              className="profile-image"
-            />
+            <img src="hero.jpg" alt="Angad Harish" className="profile-image" />
           </div>
         </div>
       </div>

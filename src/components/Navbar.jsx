@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { Link } from 'react-scroll';
-import { FaBars, FaTimes } from 'react-icons/fa';
-import ThemeToggle from './ThemeToggle';
-import { ThemeContext } from '../context/ThemeContext';
-import './Navbar.css';
+import React, { useState, useEffect, useContext } from "react";
+import { Link } from "react-scroll";
+import { FaBars, FaTimes } from "react-icons/fa";
+import ThemeToggle from "./ThemeToggle";
+import { ThemeContext } from "../context/ThemeContext";
+import "./Navbar.css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,25 +19,31 @@ const Navbar = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
   const navLinks = [
-    { to: 'home', label: 'Home' },
-    { to: 'about', label: 'About' },
-    { to: 'experience', label: 'Experience' },
-    { to: 'projects', label: 'Projects' },
-    { to: 'contact', label: 'Contact' }
+    { to: "home", label: "Home" },
+    { to: "about", label: "About" },
+    { to: "experience", label: "Experience" },
+    { to: "projects", label: "Projects" },
+    { to: "contact", label: "Contact" },
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="navbar-container">
-        <Link to="home" className="navbar-logo" smooth={true} duration={500} onClick={closeMenu}>
+        <Link
+          to="home"
+          className="navbar-logo"
+          smooth={true}
+          duration={500}
+          onClick={closeMenu}
+        >
           <img
             src={isDarkMode ? "/favicon-dark.ico" : "/favicon.ico"}
             alt="Logo"
@@ -54,7 +60,7 @@ const Navbar = () => {
           </div>
         </div>
 
-        <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
+        <ul className={`nav-menu ${isOpen ? "active" : ""}`}>
           {navLinks.map((link) => (
             <li key={link.to} className="nav-item">
               <Link

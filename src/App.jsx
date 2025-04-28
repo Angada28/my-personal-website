@@ -1,8 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Navbar, Hero, About, Experience, RandomFacts, Projects, Contact, Footer, NotFound } from './components';
-import { ThemeProvider } from './context/ThemeContext';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  RandomFacts,
+  Projects,
+  Contact,
+  Footer,
+  NotFound,
+} from "./components";
+import { ThemeProvider } from "./context/ThemeContext";
+import "./App.css";
 
 function HomePage() {
   return (
