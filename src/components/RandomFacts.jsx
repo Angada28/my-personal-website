@@ -17,7 +17,9 @@ const RandomFacts = () => {
         "I listen to almost any type of music.",
         "I enjoy messing around with linux.",
         "I have built my own Desktop.",
-        "I have had a laptop die on my."
+        "I have had a laptop die on me.",
+        "My go to show is Futurama.",
+        "I recommend the 2 minute rule to overcome procrastination".
     ];
 
     const [currentFact, setCurrentFact] = useState('');
