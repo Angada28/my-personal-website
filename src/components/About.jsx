@@ -8,8 +8,8 @@ const About = () => {
       <div className="about-content">
         <div className="about-text">
           <p>
-            Hi there, thanks for stopping by! My name's Angad. I'm a final year
-            computer science student at the University of Toronto. I'm currently
+            Hi there, thanks for stopping by! My name's Angad. I'm a recent
+            computer science graduate from the University of Toronto. I'm currently
             a teaching assistant for the course CSC148: Introduction to Computer
             Science. I'm a software engineer that enjoys learning about new
             technologies and trying new things.

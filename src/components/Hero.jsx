@@ -13,11 +13,11 @@ const Hero = () => {
             <span className="name">Angad Harish</span>
           </h1>
           <h2 className="hero-subtitle fade-in">
-            Computer Science Student & Software Engineer
+            Computer Science Graduate & Software Engineer
           </h2>
           <p className="hero-description fade-in">
             I build modern web applications and enjoy learning new technologies.
-            Currently studying at the University of Toronto.
+            Currently exploring full-time roles where I can grow and contribute meaningfully.
           </p>
           <div className="hero-buttons fade-in">
             <Link

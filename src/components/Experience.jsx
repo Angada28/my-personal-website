@@ -28,7 +28,7 @@ const Experience = () => {
     {
       degree: "Bachelor of Science in Computer Science",
       institution: "University of Toronto",
-      period: "Sep 2029 - May 2025",
+      period: "Sep 2019 - June 2025",
       description:
         "Specializing in software engineering with a focus on web development and algorithms. Relevant coursework: Data Structures, Algorithms, Operating Systems, Database Systems, Web Development.",
       type: "education",
