@@ -5,6 +5,7 @@ import {
   Hero,
   About,
   Experience,
+  Certificates,
   RandomFacts,
   Projects,
   Contact,
@@ -30,6 +31,11 @@ function HomePage() {
         <section id="experience" className="section">
           <div className="container">
             <Experience />
+          </div>
+        </section>
+        <section id="certificates" className="section">
+          <div className="container">
+            <Certificates />
           </div>
         </section>
         <section className="section">
