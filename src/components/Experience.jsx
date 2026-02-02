@@ -7,7 +7,7 @@ const Experience = () => {
     {
       title: "Teaching Assistant",
       company: "University of Toronto",
-      period: "Jan 2025 - Present",
+      period: "Jan 2025 - Dec 2025",
       description:
         "Teaching assistant for CSC148: Introduction to Computer Science. Responsible for conducting tutorials, grading assignments, marking exams, and providing support to students.",
       type: "work",

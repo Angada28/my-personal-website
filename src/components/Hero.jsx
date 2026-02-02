@@ -17,7 +17,8 @@ const Hero = () => {
           </h2>
           <p className="hero-description fade-in">
             I build modern web applications and enjoy learning new technologies.
-            Currently exploring full-time roles where I can grow and contribute meaningfully.
+            Currently exploring full-time roles where I can grow and contribute
+            meaningfully.
           </p>
           <div className="hero-buttons fade-in">
             <Link
@@ -56,7 +57,7 @@ const Hero = () => {
             >
               <FaLinkedin />
             </a>
-            <a href="mailto:angad.harish@utoronto.ca" aria-label="Email">
+            <a href="mailto:angad.harish@alumni.utoronto.ca" aria-label="Email">
               <FaEnvelope />
             </a>
           </div>

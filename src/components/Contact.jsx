@@ -13,8 +13,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope size={20} />,
       title: "Email",
-      value: "angad.harish@utoronto.ca",
-      link: "mailto:angad.harish@utoronto.ca",
+      value: "angad.harish@alumni.utoronto.ca",
+      link: "mailto:angad.harish@alumni.utoronto.ca",
     },
     {
       icon: <FaMapMarkerAlt size={20} />,
@@ -39,7 +39,7 @@ const Contact = () => {
 
   const handleEmailButtonClick = () => {
     window.location.href =
-      "mailto:angad.harish@utoronto.ca?subject=Hello%20from%20your%20website&body=Hi%20there%2C%0A%0AI%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards%2C%0A";
+      "mailto:angad.harish@alumni.utoronto.ca?subject=Hello%20from%20your%20website&body=Hi%20there%2C%0A%0AI%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards%2C%0A";
   };
 
   return (
