@@ -9,10 +9,10 @@ const About = () => {
         <div className="about-text">
           <p>
             Hi there, thanks for stopping by! My name's Angad. I'm a recent
-            computer science graduate from the University of Toronto. I'm currently
-            a teaching assistant for the course CSC148: Introduction to Computer
-            Science. I'm a software engineer that enjoys learning about new
-            technologies and trying new things.
+            computer science graduate from the University of Toronto. I was
+            recently a teaching assistant for the course CSC148: Introduction to
+            Computer Science. I'm a software engineer that enjoys learning about
+            new technologies and trying new things.
           </p>
 
           <p>
